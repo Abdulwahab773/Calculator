@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h1 class="heading">Calculator:</h1>
+      <div class="calculator">
+        <input type="text" class="display" id="calculate">
+
+        <div class="buttons">
+          <button class="btn" onclick="btnCal('7')">7</button>
+          <button class="btn" onclick="btnCal('8')">8</button>
+          <button class="btn" onclick="btnCal('9')">9</button>
+          <button class="btn operator" onclick="btnCal('/')">/</button>
+          <button class="btn" onclick="btnCal('4')">4</button>
+          <button class="btn" onclick="btnCal('5')">5</button>
+          <button class="btn" onclick="btnCal('6')">6</button>
+          <button class="btn operator" onclick="btnCal('*')">*</button>
+          <button class="btn" onclick="btnCal('1')">1</button>
+          <button class="btn" onclick="btnCal('2')">2</button>
+          <button class="btn" onclick="btnCal('3')">3</button>
+          <button class="btn operator" onclick="btnCal('-')">-</button>
+          <button class="btn zero" onclick="btnCal('0')">0</button>
+          <button class="btn" onclick="btnCal('.')">.</button>
+          <button class="btn operator" onclick="btnCal('+')">+</button>
+          <button class="btn equals" onclick="btnCal('=')">=</button>
+          <button class="btn" onclick="btnCal('C')">C</button>
+          <button class="btn" onclick="btnCal('CE')">CE</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

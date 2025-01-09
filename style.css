@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 42px;
+    font-weight: 700; 
+    color: #0078d4; 
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; 
+    animation: headingAnimation 1.5s ease-in-out;
+}
+
+@keyframes headingAnimation {
+    0% { opacity: 0; transform: translateY(-15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.calculator {
+    width: 340px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+.display {
+    width: 100%;
+    height: 70px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 36px;
+    text-align: right;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+}
+
+.btn {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 26px;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #e2e2e2;
+    transform: scale(1.1);
+}
+
+.operator {
+    background-color: #fe9241;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #fd7c1b;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.equals {
+    background-color: #0078d4;
+    color: white;
+    grid-column: span 2;
+    font-size: 32px;
+    transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.equals:hover {
+    background-color: #0061a1;
+    transform: scale(1.1);
+}
+
+.equals:active {
+    transform: scale(0.9);
+}
+
+.btn:nth-child(17),
+.btn:nth-child(18),
+.equals {
+    height: 60px;  
+    font-size: 28px;  
+    padding: 0 20px;  
+}
+
+.equals {
+    font-size: 32px; 
+}
+
+.btn:nth-child(17):hover,
+.btn:nth-child(18):hover,
+.equals:hover {
+    transform: scale(1.05); 
+}
+
+.btn:nth-child(17):active,
+.btn:nth-child(18):active,
+.equals:active {
+    transform: scale(0.95); 
+}
