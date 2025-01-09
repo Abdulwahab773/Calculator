@@ -133,3 +133,19 @@ body {
 .equals:active {
     transform: scale(0.95); 
 }
+
+#cebtn {
+    position: absolute;
+    bottom: 61px;
+}
+
+#cbtn {
+    position: absolute;
+    bottom: 61px;
+    right: 685px;
+}
+
+#equalbtn {
+    position: relative;
+    left: 150px;
+}
