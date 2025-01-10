@@ -112,7 +112,7 @@ body {
 
 .btn:nth-child(17),
 .btn:nth-child(18),
-.equals {
+    .equals {
     height: 60px;  
     font-size: 28px;  
     padding: 0 20px;  
@@ -122,30 +122,8 @@ body {
     font-size: 32px; 
 }
 
-.btn:nth-child(17):hover,
-.btn:nth-child(18):hover,
-.equals:hover {
-    transform: scale(1.05); 
-}
-
-.btn:nth-child(17):active,
-.btn:nth-child(18):active,
-.equals:active {
-    transform: scale(0.95); 
-}
-
-#cebtn {
-    position: absolute;
-    bottom: 61px;
-}
 
 #cbtn {
-    position: absolute;
-    bottom: 61px;
-    right: 685px;
-}
-
-#equalbtn {
-    position: relative;
-    left: 150px;
-}
+    height: 60px;
+    padding: 0 20px;
+ } 
